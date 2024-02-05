@@ -21,15 +21,17 @@ public class JPanelColor extends JPanel {
          g.fillRect(15, 50, 100, 20);
         g.drawString("RGB actual:" + g.getColor(), 130, 65);
 
-                   // establece nuevo color de dibujo, usando objetos Color static  27                  g.setColor(Color.BLUE);
+                   // establece nuevo color de dibujo, usando objetos Color static  27                 g.setColor(Color.BLUE);
         g.fillRect(15, 75, 100, 20);
          g.drawString("RGB actual:" + g.getColor(), 130, 90);
-         
+
+         // establece nuevo color de dibujo, usando objetos
          Color color = Color.MAGENTA;
          g.setColor(color);
- 
+        //fillRect crea un rectángulo relleno con el color actual
       g.fillRect(15, 100, 100, 20);
 
+      //dibuja el valor RGB actual
       g.drawString("Valores RGB: " + color.getRed() + " ," +
                     color.getGreen() + "," + color.getBlue(), 130, 115);
     
